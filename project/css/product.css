@@ -1,0 +1,16 @@
+.container {
+  width: 1150px;
+  margin: 0 auto; }
+
+.product__gallery, .product__description {
+  display: inline-block;
+  width: 50%; }
+
+.product__gallery_small-img {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 16px; }
+
+.product__gallery_img {
+  display: block;
+  margin-bottom: 12px; }
