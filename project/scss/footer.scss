@@ -1,0 +1,53 @@
+@import "./variables.scss";
+
+.footer{
+	margin: 120px 0px 50px 0px;
+}
+.footer__text{
+	color: $text__color;
+	font-family: $font__Georgia;
+	font-size: 11px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.footer__title{
+	color: #333743;
+	font-family: $font__ptSans;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 22px;
+	text-align: center;
+}
+.footer__item{
+	display: inline-block;
+	width: 20%;
+}
+.footer__item_img{
+	display: block;
+	margin-bottom: 17px;
+}
+.footer__item_description{
+	padding: 0px 10px;
+}
+.footer__item_name{
+	display: inline-block;
+	text-transform: uppercase;
+	color: #333743;
+	font-family: $font__ptSans;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.footer__item_price{
+	color: $text__color;
+	font-family: $font__Georgia;
+	font-size: 13px;
+	float: right;
+}
+.footer__item_category{
+	display: block;
+	color: $text__color;
+	font-family: $font__Georgia;
+	font-size: 11px;
+}
