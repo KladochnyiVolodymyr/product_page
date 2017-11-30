@@ -1,5 +1,5 @@
 .container {
-  width: 1150px;
+  width: 1200px;
   margin: 0 auto; }
 
 .product__gallery, .product__description {
@@ -14,3 +14,88 @@
 .product__gallery_img {
   display: block;
   margin-bottom: 12px; }
+
+.product__description {
+  text-align: center;
+  vertical-align: top; }
+
+.product__chapter {
+  font-family: "Georgia", sans-serif;
+  font-size: 12px;
+  color: #9fcddd;
+  margin: 20px 0px;
+  display: block; }
+
+.product__chapter_link {
+  text-decoration: none;
+  color: #9fcddd; }
+
+.product__title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  width: 60%;
+  margin: auto;
+  line-height: 1.5; }
+
+.product__chapter_mars {
+  margin-right: 7px; }
+
+.product__chapter_angel {
+  margin: 0px 5px; }
+
+.product__price {
+  font-family: "Georgia", sans-serif;
+  font-size: 22px;
+  display: block;
+  margin: 60px 0px; }
+
+.product__description_title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  border-bottom: 1px solid #dbdde5;
+  padding-bottom: 10px; }
+
+.product__description_text {
+  color: #9197a3;
+  font-family: "Georgia", sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px; }
+
+.product__colors {
+  float: left; }
+
+.clear {
+  clear: both; }
+
+input[type=radio] {
+  display: none; }
+
+input[type=radio] + label {
+  background: url(../images/circle.png) no-repeat; }
+
+input[type=radio]:checked + label {
+  background: url(../images/check.png) no-repeat; }
+
+.product__colors_choice {
+  display: block; }
+
+.product__colors_title {
+  color: #333743;
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  font-weight: bold; }
+
+.product__button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #afa394;
+  font-family: "Georgia", sans-serif;
+  font-size: 13px;
+  border-radius: 2px;
+  padding: 20px 180px;
+  display: inline-block; }
