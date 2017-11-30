@@ -141,7 +141,8 @@ input[type=radio]:checked + label {
 
 .footer__item_img {
   display: block;
-  margin-bottom: 17px; }
+  margin-bottom: 17px;
+  width: 100%; }
 
 .footer__item_description {
   padding: 0px 10px; }
@@ -166,3 +167,7 @@ input[type=radio]:checked + label {
   color: #9197a3;
   font-family: "Georgia", sans-serif;
   font-size: 11px; }
+
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+  .container {
+    width: 955px; } }
