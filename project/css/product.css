@@ -66,29 +66,49 @@
   margin: auto;
   margin-top: 20px; }
 
-.product__colors {
-  float: left; }
-
-.clear {
-  clear: both; }
-
 input[type=radio] {
   display: none; }
 
 input[type=radio] + label {
-  background: url(../images/circle.png) no-repeat; }
+  background: url(../images/circle.png) no-repeat left center; }
 
 input[type=radio]:checked + label {
   background: url(../images/check.png) no-repeat; }
 
+.fa-stop_blue {
+  color: #9fcede;
+  margin-right: 10px; }
+
+.fa-stop_brown {
+  color: #333743;
+  margin-right: 10px; }
+
+.product__colors {
+  margin: 50px 0px 75px 50px; }
+
 .product__colors_choice {
-  display: block; }
+  display: block;
+  text-align: left;
+  padding-left: 25px;
+  color: #9197a3;
+  font-family: "Georgia", sans-serif;
+  font-size: 13px;
+  margin-bottom: 17px; }
+
+.product__colors_choice_blue {
+  color: #333743; }
 
 .product__colors_title {
   color: #333743;
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: left;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #dbdde5;
+  padding-bottom: 10px;
+  width: 30%; }
 
 .product__button {
   text-decoration: none;
