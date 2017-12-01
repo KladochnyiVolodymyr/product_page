@@ -10,6 +10,9 @@
 	display: inline-block;
 	margin-right: 60px;
 }
+.header__menu-bars{
+	display: none;
+}
 .header__nav{
 	display: inline-block;
 	position: absolute;
@@ -40,6 +43,7 @@
 }
 .header__account{
 	float: right;
+	margin-top: 8px;
 }
 .header__account-bag{
 	display: inline-block;
@@ -87,14 +91,113 @@
 	.container{
 		width: 750px;
 	}
+	.header__list_item{
+		margin-right: 30px;
+	}
 }
 @media screen and (max-width: 769px) and (min-width: 480px) {
 	.container{
 		width: 100%;
 	}
+	.header__menu-bars{
+		display: inline-block;
+		position: absolute;
+    	top: 25px;
+    	right: 35px;
+		color: #000;
+    	font-size: 35px;
+	}
+	.header__nav{
+		display: none;
+		position: relative;
+		margin-top: 5px;
+		text-align: center;
+	}
+	.header__list_item{
+		display: block;
+		margin-top: 15px;
+		margin-right: 0px;
+	}
+	.header__account{
+		display: none;
+		float: none;
+		text-align: center;
+		margin-top: 15px;
+	}
+	.header__account_line{
+		display: none;
+	}
+	.header__account_list-border:after{
+		content: none;
+	}
+	.header__account-bag{
+		display: block;
+		margin-right: 0px;
+		margin-left: 42px;
+	}
+	.header__account-registration{
+		display: block;
+		margin-left: 0px;
+	}
+	.header__account_list{
+		display: block;
+		padding-left: 0px;
+		margin-top: 15px;
+	}
+	.responsive{
+    	display: block;
+	}
 }
 @media screen and (max-width: 480px) and (min-width: 320px) {
 	.container{
 		width: 100%;
+	}
+	.header__menu-bars{
+		display: inline-block;
+		position: absolute;
+    	top: 25px;
+    	right: 35px;
+		color: #000;
+    	font-size: 35px;
+	}
+	.header__nav{
+		display: none;
+		position: relative;
+		margin-top: 5px;
+		text-align: center;
+	}
+	.header__list_item{
+		display: block;
+		margin-top: 15px;
+		margin-right: 0px;
+	}
+	.header__account{
+		display: none;
+		float: none;
+		text-align: center;
+		margin-top: 15px;
+	}
+	.header__account_line{
+		display: none;
+	}
+	.header__account_list-border:after{
+		content: none;
+	}
+	.header__account-bag{
+		display: block;
+		margin-right: 0px;
+		margin-left: 42px;
+	}
+	.header__account-registration{
+		display: block;
+		margin-left: 0px;
+	}
+	.header__account_list{
+		display: block;
+		padding-left: 0px;
+		margin-top: 15px;
+	}
+	.responsive{
+    	display: block;
 	}
 }
