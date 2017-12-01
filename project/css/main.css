@@ -1,18 +1,97 @@
 .header {
-  padding: 20px 35px; }
+  padding: 25px 35px;
+  box-shadow: 0 2px 9px rgba(189, 189, 189, 0.5);
+  margin-bottom: 50px;
+  position: relative; }
 
 .header__logo {
-  display: inline-block; }
+  display: inline-block;
+  margin-right: 60px; }
 
 .header__nav {
-  display: inline-block; }
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  margin-top: -9px; }
 
 .header__list_item {
-  display: inline-block; }
+  display: inline-block;
+  margin-right: 60px; }
 
 .header__list_link {
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #9197a3;
+  font-family: "PT Sans", sans-serif;
+  font-size: 11px;
+  font-weight: bold; }
+  .header__list_link:hover {
+    color: #333743; }
+
+.header__account_link {
+  opacity: 1;
+  color: #333743;
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none; }
+  .header__account_link:hover {
+    opacity: .7; }
+
+.header__account {
+  float: right; }
+
+.header__account-bag {
+  display: inline-block;
+  margin-right: 30px; }
+
+.header__account-bag_index {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 5px 8px;
+  border-radius: 25px;
+  background-color: #333743;
+  font-family: "Georgia", sans-serif;
+  font-size: 11px;
+  margin-left: 15px; }
+
+.header__account-registration {
+  display: inline-block;
+  margin-left: 15px; }
+
+.header__account_list {
+  display: inline-block;
+  padding-left: 15px; }
+
+.header__account_list-border:after {
+  content: "|";
+  font-size: 11px;
+  background-color: #000;
+  margin-left: 15px; }
+
+.header__account_line {
+  display: inline-block;
+  border-right: 1px solid #ddd;
+  height: 85px;
+  position: absolute;
+  top: 0px; }
+
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+  .container {
+    width: 970px; } }
+
+@media screen and (max-width: 993px) and (min-width: 769px) {
+  .container {
+    width: 750px; } }
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .container {
+    width: 100%; } }
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .container {
+    width: 100%; } }
 
 .clearfix:after {
   content: '';
