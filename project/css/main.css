@@ -1,8 +1,10 @@
 .header {
   padding: 25px 35px;
   box-shadow: 0 2px 9px rgba(189, 189, 189, 0.5);
-  margin-bottom: 50px;
-  position: relative; }
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff; }
 
 .header__logo {
   display: inline-block;
@@ -43,7 +45,7 @@
 
 .header__account {
   float: right;
-  margin-top: 8px; }
+  margin-top: 5px; }
 
 .header__account-bag {
   display: inline-block;
@@ -58,7 +60,11 @@
   background-color: #333743;
   font-family: "Georgia", sans-serif;
   font-size: 11px;
-  margin-left: 15px; }
+  margin-left: 15px;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  box-sizing: border-box; }
 
 .header__account-registration {
   display: inline-block;
@@ -184,6 +190,9 @@
   width: 1200px;
   margin: 0 auto; }
 
+.product {
+  padding-top: 135px; }
+
 .product__gallery, .product__description {
   display: inline-block;
   width: 50%; }
@@ -302,6 +311,8 @@ input[type=radio]:checked + label {
   border-radius: 2px;
   padding: 20px 180px;
   display: inline-block; }
+  .product__button:hover {
+    opacity: 0.9; }
 
 @media screen and (max-width: 1200px) and (min-width: 993px) {
   .container {
@@ -429,6 +440,9 @@ input[type=radio]:checked + label {
   margin-right: 10px;
   margin-bottom: 20px;
   width: 230px; }
+
+.footer__item_link {
+  text-decoration: none; }
 
 .footer__item_img {
   margin-bottom: 17px;
