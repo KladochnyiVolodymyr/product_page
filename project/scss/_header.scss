@@ -88,7 +88,57 @@
     position: absolute;
     top: 0px;
 }
+.header__menu-bars{
+  width: 35px;
+  height: 35px;
+  position: relative;
+  cursor: pointer;
+  @include transform (rotate(0deg));
+  @include transition (.5s ease-in-out);
+  	span{
+  		display: block;
+  		position: absolute;
+  		height: 5px;
+  		width: 100%;
+  		background: #000;
+  		border-radius: 9px;
+  		opacity: 1;
+  		left: 0;
+  		@include transform (rotate(0deg));
+  		@include transition(.25s ease-in-out);
+  	}
+  	span:nth-child(1){
+  		top: 0px;
+  	}
+  	span:nth-child(2){
+  		top: 13px;
+  	}
+  	span:nth-child(3){
+  		top: 13px;
+  	}
+  	span:nth-child(4){
+  		top: 26px;
+  	}
 
+}
+.header__menu-bars.open {
+	span:nth-child(1) {
+  		top: 18px;
+  		width: 0%;
+  		left: 50%;
+	}
+	span:nth-child(2){
+		@include transform(rotate(45deg));
+	}
+	span:nth-child(3){
+		@include transform(rotate(-45deg));
+	}
+	span:nth-child(4){
+		top: 18px;
+  		width: 0%;
+  		left: 50%;
+	}
+}
 @media screen and (max-width: 1200px) and (min-width: 993px) {
     .container{
 		width: 970px;
@@ -111,8 +161,6 @@
 		position: absolute;
     	top: 25px;
     	right: 35px;
-		color: #000;
-    	font-size: 35px;
 	}
 	.header__nav{
 		display: none;
@@ -125,11 +173,17 @@
 		margin-top: 15px;
 		margin-right: 0px;
 	}
+	.header__list_link{
+		font-size: 16px;
+	}
 	.header__account{
 		display: none;
 		float: none;
 		text-align: center;
 		margin-top: 15px;
+	}
+	.header__account_link{
+		font-size: 16px;
 	}
 	.header__account_line{
 		display: none;

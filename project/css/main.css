@@ -88,6 +88,67 @@
   position: absolute;
   top: 0px; }
 
+.header__menu-bars {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out; }
+  .header__menu-bars span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: #000;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out; }
+  .header__menu-bars span:nth-child(1) {
+    top: 0px; }
+  .header__menu-bars span:nth-child(2) {
+    top: 13px; }
+  .header__menu-bars span:nth-child(3) {
+    top: 13px; }
+  .header__menu-bars span:nth-child(4) {
+    top: 26px; }
+
+.header__menu-bars.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
+
+.header__menu-bars.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.header__menu-bars.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.header__menu-bars.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
+
 @media screen and (max-width: 1200px) and (min-width: 993px) {
   .container {
     width: 970px; } }
@@ -105,9 +166,7 @@
     display: inline-block;
     position: absolute;
     top: 25px;
-    right: 35px;
-    color: #000;
-    font-size: 35px; }
+    right: 35px; }
   .header__nav {
     display: none;
     position: relative;
@@ -117,11 +176,15 @@
     display: block;
     margin-top: 15px;
     margin-right: 0px; }
+  .header__list_link {
+    font-size: 16px; }
   .header__account {
     display: none;
     float: none;
     text-align: center;
     margin-top: 15px; }
+  .header__account_link {
+    font-size: 16px; }
   .header__account_line {
     display: none; }
   .header__account_list-border:after {
@@ -189,7 +252,8 @@
   font-size: 24px;
   width: 60%;
   margin: auto;
-  line-height: 1.5; }
+  line-height: 1.5;
+  text-transform: uppercase; }
 
 .product__chapter_mars {
   margin-right: 7px; }
