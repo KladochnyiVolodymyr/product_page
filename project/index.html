@@ -42,7 +42,7 @@
 				</li>
 			</ul>
 		</div>
-		<a class="header__menu-bars clearfix" href="javascript:void(0);" onclick="menuFunction()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+		<a class="header__menu-bars" href="javascript:void(0);" onclick="menuFunction()"><i class="fa fa-bars" aria-hidden="true"></i></a>
 	</header>
 	<div class="product">
 		<div class="container">
@@ -66,9 +66,19 @@
 				<div class="product__colors">
 					<p class="product__colors_title">Colors</p>
 					<input type="radio" name="color" value="blue" id="blue">
-					<label class="product__colors_choice product__colors_choice_blue" for="blue"><i class="fa fa-stop fa-stop_blue" aria-hidden="true"></i>Blue</label>
+					<label class="product__colors_choice product__colors_choice_blue" for="blue">
+						<i class="fa fa-circle-thin product__colors_not-check" aria-hidden="true"></i>
+						<i class="fa fa-check-circle product__colors_check" aria-hidden="true"></i>
+						<i class="fa fa-stop fa-stop_blue" aria-hidden="true"></i>
+						Blue
+					</label>
 					<input type="radio" name="color" value="brown" id="brown" checked>
-					<label class="product__colors_choice" for="brown"><i class="fa fa-stop fa-stop_brown" aria-hidden="true"></i>Brown</label>
+					<label class="product__colors_choice" for="brown">
+						<i class="fa fa-circle-thin product__colors_not-check" aria-hidden="true"></i>
+						<i class="fa fa-check-circle product__colors_check" aria-hidden="true"></i>
+						<i class="fa fa-stop fa-stop_brown" aria-hidden="true"></i>
+						Brown
+					</label>
 				</div>
 				<a class="product__button" href="#">Buy now - $78</a>
 			</div>
