@@ -1,5 +1,7 @@
 @import "./_variables.scss";
 
+/*-----product----------*/
+
 .clearfix:after{
     content: '';
     clear: both;
@@ -271,3 +273,5 @@ input[type=radio]:checked + label{
 		padding: 20px 79px;
 	}
 }
+
+/*----- product-end ---------*/
